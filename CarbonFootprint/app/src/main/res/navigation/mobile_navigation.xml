@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/navigation_measure">
+
+    <fragment
+            android:id="@+id/navigation_measure"
+            android:name="com.example.carbon_footprint_app.ui.measure.MeasureFragment"
+            android:label="@string/title_measure"
+            tools:layout="@layout/fragment_measure"/>
+
+    <fragment
+            android:id="@+id/navigation_airpollution"
+            android:name="com.example.carbon_footprint_app.ui.airpollution.AirPollutionFragment"
+            android:label="@string/title_airpollution"
+            tools:layout="@layout/fragment_airpollution"/>
+
+    <fragment
+            android:id="@+id/navigation_tipsandtricks"
+            android:name="com.example.carbon_footprint_app.ui.tipsandtricks.TipsAndTricksFragment"
+            android:label="@string/title_tipsandtricks"
+            tools:layout="@layout/fragment_tipsandtricks"/>
+</navigation>

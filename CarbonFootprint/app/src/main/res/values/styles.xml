@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="measure">
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#A2A2B5</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="total_progress">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#0E0E12</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+    <style name="other_text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#0E0E12</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+    <style name="calculateInfo">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">#666680</item>
+    </style>
+    <style name="pollution">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#0E0E12</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+</resources>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CalculateActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="157dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:text="@string/categoryHome"
+                android:textAppearance="@style/measure"
+                android:lineSpacingExtra="5sp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Electricity"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="kWh"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextElectricity"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Natural Gas"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="kg"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextNaturalGas"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Coal"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="kg"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextCoal"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Wooden Pellets"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="kg"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextWoodenPellets"/>
+
+        <TextView
+                android:layout_width="157dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:text="@string/categoryCarMotorbike"
+                android:textAppearance="@style/measure"
+                android:lineSpacingExtra="5sp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Car"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextCar"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Motorbike"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextMotorbike"/>
+
+        <TextView
+                android:layout_width="157dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:text="@string/categoryPublicTransport"
+                android:textAppearance="@style/measure"
+                android:lineSpacingExtra="5sp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Bus"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextBus"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Tram"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextTram"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Taxi"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextTaxi"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Subway"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextSubway"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Train"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextTrain"/>
+
+        <TextView
+                android:id="@+id/spending_bu"
+                android:layout_width="157dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:text="@string/categoryFlights"
+                android:textAppearance="@style/measure"
+                android:lineSpacingExtra="5sp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Flights shorter than 4 hours"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextFlightsShorter"/>
+
+        <TextView
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:text="Flights longer than 4 hours"
+                android:textAppearance="@style/calculateInfo"
+                android:lineSpacingExtra="1sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:background="@drawable/textbox_design"
+                android:hint="km"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/other_text"
+                android:ems="10"
+                android:id="@+id/editTextFlightLonger"/>
+
+        <Button
+                android:text="Calculate"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="20dp"
+                android:id="@+id/btCalculate"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

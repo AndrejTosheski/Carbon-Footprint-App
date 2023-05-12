@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Carbon Footprint</string>
+    <string name="title_measure">Measure</string>
+    <string name="title_airpollution">Air Pollution</string>
+    <string name="title_tipsandtricks">Tips &amp; Tricks</string>
+
+    <string name="measure">Measure</string>
+    <string name="categoryHome">Home</string>
+    <string name="categoryCarMotorbike">Car &amp; Motorbike</string>
+    <string name="categoryPublicTransport">Public Transport</string>
+    <string name="categoryFlights">Flights</string>
+    <string name="tips_and_tricks">Tips &amp; Tricks</string>
+</resources>

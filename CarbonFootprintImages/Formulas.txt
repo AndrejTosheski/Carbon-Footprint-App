@@ -1,0 +1,42 @@
+Electricity in kWh:
+
+Carbon emissions (in kg) = Electricity consumption (in kWh) x 0.44 kg CO2/kWh (average emission factor in the US)
+
+Natural gas in kg:
+
+Carbon emissions (in kg) = Natural gas consumption (in kg) x 0.054 kg CO2/kg (average emission factor in the US)
+
+Coal in kg:
+
+Carbon emissions (in kg) = Coal consumption (in kg) x 1.0 kg CO2/kg (assumed average emission factor for bituminous coal)
+Wooden pellets:
+
+Carbon emissions (in kg) = Wooden pellet consumption (in kg) x 0.06 kg CO2/kg (assumed average emission factor for wood pellets produced in the US)
+Flights shorter than 4 hours:
+
+Carbon emissions (in kg) = Distance flown (in km) x 0.20 kg CO2/km/passenger (assumed average emission factor for short-haul flights) x Number of passengers (assuming one passenger)
+Flights longer than 4 hours:
+
+Carbon emissions (in kg) = Distance flown (in km) x 0.33 kg CO2/km/passenger (assumed average emission factor for long-haul flights) x Number of passengers (assuming one passenger)
+Car in km:
+
+Carbon emissions (in kg) = Distance driven (in km) x 0.24 kg CO2/L (average emission factor for gasoline) x 0.07 L/km (average fuel consumption for cars) (assuming one passenger)
+Motorbike in km:
+
+Carbon emissions (in kg) = Distance driven (in km) x 0.24 kg CO2/L (average emission factor for gasoline) x 0.05 L/km (average fuel consumption for motorbikes) (assuming one passenger)
+Bus in km:
+
+Carbon emissions (in kg) = Distance driven (in km) x 0.31 kg CO2/L (average emission factor for diesel buses) x 0.6 L/km (average fuel consumption for buses) (assuming one passenger)
+Tram in km:
+
+Carbon emissions (in kg) = Distance traveled (in km) x 0.023 kg CO2/passenger-km (average emission factor for trams in Europe) (assuming one passenger)
+Taxi in km:
+Carbon emissions (in kg) = Distance traveled (in km) x 0.187 kg CO2/km (average emission factor for a typical gasoline-powered taxi) (assuming one passenger)
+Subway in km:
+Carbon emissions (in kg) = Distance traveled (in km) x 0.040 kg CO2/passenger-km (average emission factor for subways in the US) (assuming one passenger)
+Train in km:
+Carbon emissions (in kg) = Distance traveled (in km) x 0.041 kg CO2/passenger-km (average emission factor for trains in the US) (assuming one passenger)
+
+Less than 2,000 kg CO2e per year: Good
+Between 2,000 and 5,000 kg CO2e per year: Fair
+More than 5,000 kg CO2e per year: Bad

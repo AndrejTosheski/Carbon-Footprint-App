@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.measure.MeasureFragment">
+
+    <TextView
+            android:id="@+id/spending_bu"
+            android:layout_width="157dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/measure"
+            android:textAppearance="@style/measure"
+            android:layout_marginTop="28dp"
+            android:lineSpacingExtra="5sp"
+            android:gravity="center_horizontal|center_vertical"/>
+
+    <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|center_vertical">
+
+        <ProgressBar
+                android:id="@+id/totalProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:indeterminate="false"
+                android:max="8000"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_bar" />
+
+        <TextView
+                android:id="@+id/textViewTotalProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="6043"
+                android:textAppearance="@style/total_progress"
+                android:lineSpacingExtra="7sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_alignStart="@id/totalProgress" android:layout_alignTop="@id/totalProgress"
+                android:layout_alignEnd="@id/totalProgress" android:layout_alignBottom="@id/totalProgress"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/textViewProgressInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Your carbon emission"
+            android:textAppearance="@style/other_text"
+            android:gravity="center_horizontal|center_vertical"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:src="@drawable/ic_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/purple_500"
+            android:clickable="true"
+            android:id="@+id/btnCalculate"
+            android:focusable="true"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="56dp"
+                android:layout_marginHorizontal="30dp">
+
+            <TextView
+                    android:id="@+id/categoryHome"
+                    android:layout_width="157dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/categoryHome"
+                    android:textAppearance="@style/measure"
+                    android:lineSpacingExtra="5sp"
+                    android:gravity="center_horizontal|center_vertical"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundbox"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/flash"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+
+                    <TextView
+                            android:id="@+id/textviewTitle"
+                            android:layout_weight="4.5"
+                            android:text="Electricity"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/textviewElectricityInfo"
+                            android:layout_weight="1"
+                            android:text="632"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="10dp"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:max="1000"
+                        android:progress="0"
+                        android:id="@+id/progressBarElectricity"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundbox"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/gas"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+
+                    <TextView
+                            android:id="@+id/textviewTitle2"
+                            android:layout_weight="4"
+                            android:text="Natural Gas"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/textviewNaturalGasInfo"
+                            android:layout_weight="1"
+                            android:text="632"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="10dp"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:max="1000"
+                        android:progress="0"
+                        android:id="@+id/progressBarNaturalGas"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundbox"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/trunk"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+
+                    <TextView
+                            android:id="@+id/textviewTitle3"
+                            android:layout_weight="2.5"
+                            android:text="Wooden Pellets"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/textviewWoodenPelletsInfo"
+                            android:layout_weight="1"
+                            android:text="632"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="10dp"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:max="1000"
+                        android:progress="0"
+                        android:id="@+id/progressBarWoodenPellets"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundbox"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/coal"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+
+                    <TextView
+                            android:id="@+id/textviewTitle4"
+                            android:layout_weight="6.5"
+                            android:text="Coal"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/textviewCoalInfo"
+                            android:layout_weight="1"
+                            android:text="632"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="10dp"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:max="1000"
+                        android:progress="0"
+                        android:id="@+id/progressBarCoal"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/categoryCarMotorbike"
+                    android:layout_width="257dp"
+                    android:layout_height="24dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/categoryCarMotorbike"
+                    android:textAppearance="@style/measure"
+                    android:lineSpacingExtra="5sp"
+                    android:gravity="center_horizontal|center_vertical"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundbox"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/vehicle"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+
+                    <TextView
+                            android:id="@+id/textviewTitle5"
+                            android:layout_weight="2.5"
+                            android:text="Car &amp; Motorbike"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/textviewCarMotorbikeInfo"
+                            android:layout_weight="1"
+                            android:text="632"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="10dp"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:max="1000"
+                        android:progress="0"
+                        android:id="@+id/progressBarCarMotorbike"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/categoryPublicTransport"
+                    android:layout_width="257dp"
+                    android:layout_height="24dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/categoryPublicTransport"
+                    android:textAppearance="@style/measure"
+                    android:lineSpacingExtra="5sp"
+                    android:gravity="center_horizontal|center_vertical"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundbox"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/bus"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+
+                    <TextView
+                            android:id="@+id/textviewTitle6"
+                            android:layout_weight="1.5"
+                            android:text="Public Transport"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/textviewPublicTransportInfo"
+                            android:layout_weight="1"
+                            android:text="632"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="10dp"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:max="1000"
+                        android:progress="0"
+                        android:id="@+id/progressBarPublicTransport"/>
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/categoryFlights"
+                    android:layout_width="257dp"
+                    android:layout_height="24dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/categoryFlights"
+                    android:textAppearance="@style/measure"
+                    android:lineSpacingExtra="5sp"
+                    android:gravity="center_horizontal|center_vertical"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/backgroundbox"
+                    android:layout_marginTop="10dp">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:src="@drawable/airplane"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+
+                    <TextView
+                            android:id="@+id/textviewTitle7"
+                            android:layout_weight="5.5"
+                            android:text="Flights"
+                            android:layout_gravity="center_vertical"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/textviewFlightsInfo"
+                            android:layout_weight="1"
+                            android:text="632"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="10dp"
+                            android:textAppearance="@style/other_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:max="1000"
+                        android:progress="0"
+                        android:id="@+id/progressBarFlights"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
