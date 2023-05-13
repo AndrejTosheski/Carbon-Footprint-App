@@ -1,6 +1,10 @@
 package com.example.carbon_footprint_app.ui.airpollution
 
+import android.Manifest
 import android.annotation.SuppressLint
+import android.content.pm.PackageManager
+import android.location.Geocoder
+import android.location.Location
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -9,32 +13,23 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.carbon_footprint_app.AirPollutionData
 import com.example.carbon_footprint_app.R
 import com.example.carbon_footprint_app.databinding.FragmentAirpollutionBinding
 import com.example.carbon_footprint_app.interfaceGet
+import com.google.android.gms.location.LocationServices
 import retrofit2.Call
-import retrofit2.Retrofit
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.Callback
 import retrofit2.Response
-import android.Manifest
-import android.app.Activity
-import android.content.Context
-import android.content.Context.LOCATION_SERVICE
-import android.content.pm.PackageManager
-import android.location.Address
-import android.location.Geocoder
-import android.location.Location
-import android.location.LocationManager
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.getSystemService
-import com.google.android.gms.location.LocationServices
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import java.io.BufferedReader
+import java.io.InputStreamReader
 import java.util.*
+
 
 class AirPollutionFragment : Fragment() {
 
@@ -167,15 +162,20 @@ class AirPollutionFragment : Fragment() {
         permissions: Array<out String>,
         grantResults: IntArray
     ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-
         if (requestCode == LOCATION_PERMISSION_REQUEST_CODE) {
             if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                // Location permission granted
+                // Location permission granted, get location
                 getLocation()
+
+                // Perform UI updates or reload data after permission is granted
+                // Example: updateTextViews()
+                // Example: fetchData()
             } else {
-                //nothing
+                // Location permission denied, handle accordingly
+                // Display a message or disable location-related functionality
             }
+        } else {
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         }
     }
 

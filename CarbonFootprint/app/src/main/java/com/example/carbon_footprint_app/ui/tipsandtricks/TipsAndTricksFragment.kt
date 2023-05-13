@@ -45,7 +45,7 @@ class TipsAndTricksFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val itemList: List<String> = listOf("Minimize Waste", "Conserve Electricity", "Clean Energy Sources", "Reduce Air Travel", "Consume Mindfully") // Replace with your own list of items
+        val itemList: List<String> = listOf("Plant Trees", "Minimize Waste", "Conserve Electricity", "Clean Energy Sources", "Reduce Air Travel", "Consume Mindfully") // Replace with your own list of items
 
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
         val adapter = ListAdapter(requireContext(), itemList)
