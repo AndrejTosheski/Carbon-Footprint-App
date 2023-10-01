@@ -188,7 +188,6 @@ class AirPollutionFragment : Fragment() {
 
         // Creating an instance of API interface
         val requestGet = retrofit.create(interfaceGet::class.java)
-        val apiKey = "1ba3eabae3f45305296e086ace4102f3"
 
         val values = getCityData(etSearchQuery.text.toString())
         if(values.size > 0){
